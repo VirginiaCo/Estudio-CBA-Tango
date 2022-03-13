@@ -1,0 +1,371 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+/* Valiables */
+:root {
+    --principal-color: rgb(92, 226, 231);
+    --secondary-color: magenta;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Russo One', sans-serif;
+}
+
+
+/* Normalize */
+*,
+::after,
+::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Global Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    font-size: 75%;
+    font-family: var(--font-primary);
+    color: black;
+}
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Helpers */
+
+.flex-row {
+    display:flex;
+    
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100%;
+}
+
+
+/* Header */
+
+.header {
+    background-image: url(../assets/image/Imagen-fondo-header-transp-01-01.png);
+}
+
+.header .navbar {
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .logo {
+    flex-basis: 30%;
+    min-width: 200px;
+}
+
+header .navbar-menu {
+    flex-basis: 50%;
+    justify-content: space-between;
+    
+}
+
+.navbar-menu .navbar-item .menu-link{
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 1rem;
+    
+    
+
+}
+
+.navbar .navbar-item .sub-menu {
+    display: none;
+    position: absolute;
+}
+    
+    
+.navbar .navbar-menu .navbar-item:hover .sub-menu {
+    display: block;
+
+}
+
+.navbar-menu .navbar-item {
+    position: relative;
+    transition: all .3s ease-in-out;
+
+
+}
+
+.navbar-menu .navbar-item:hover {
+    background-color: var(--principal-color);
+    
+}
+
+.navbar-menu .navbar-item .sub-menu .sub-menu__item {
+    padding: 1rem;
+}
+
+.navbar-item .sub-menu .sub-menu__link {
+    transition: all .3s ease-in-out;
+
+}
+
+
+.navbar-item .sub-menu .sub-menu__link:hover  {
+    background-color: var(--principal-color);
+    color: whitesmoke;
+    padding: 0.5rem;
+    display: block;
+    
+} 
+
+/* Main-Index */
+
+
+.titulo-principal {
+    font-family: var(--font-secondary);
+    font-weight: lighter;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    background-color: var(--principal-color);
+    
+    
+}
+
+.imagen-presentacion {
+    min-width: 320px;
+}
+
+.titulo-secundario {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    text-align: center;
+    font-size: 3em;
+    color: black;
+    padding: 1%;
+    margin: 3% 0;
+    
+    background-color: var(--principal-color);
+    
+
+
+}
+
+.presentacion-proyecto p {
+    
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 20%;
+    margin: 5%;
+    
+
+    
+}
+
+
+
+.presentacion-proyecto {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    
+    "propuestas-item-1 propuestas-item-2" 
+    "propuestas-item-3 propuestas-item-4";
+
+}
+
+.propuestas-item-1 { 
+    grid-area: propuestas-item-1;
+    background-color: var(--principal-color);
+    color: whitesmoke;
+}
+.propuestas-item-2 { 
+    grid-area: propuestas-item-2; 
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.propuestas-item-3 { 
+    grid-area: propuestas-item-3;
+    background-color: var(--secondary-color);
+    color: white;
+}
+.propuestas-item-4 { 
+    grid-area: propuestas-item-4; 
+    background-color: var(--principal-color);
+    color: whitesmoke;
+
+}
+
+
+.titulo-alternativo {
+    font-family: var(--font-primary) ;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 5%;
+
+}
+
+
+/* Main-Nosotros */
+
+.nosotros {
+    display: flex;
+    
+
+    
+}
+
+.texto-presentacion {
+    padding: 5%;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 18px;
+
+}
+
+.texto-presentacion-propuesta {
+    padding: 1% 4%;
+    margin: 2% 0;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    
+
+}
+
+/* Main Staff */
+
+.presentacion-staff {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.img-presentacion-staff img {
+    margin-bottom: 10%;
+}
+
+.img-staff img {
+    padding: 2%;
+}
+
+
+.texto-presentacion-staff {
+    text-align: center;
+    padding: 1% 10% ;
+    margin-bottom: 40%;
+
+
+}
+
+/* Main Nuestras Clases */
+
+.nuestras-clases{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    justify-content: center;
+}
+
+
+
+/* Footer */
+
+footer {
+    height: 10vh;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+/* MEDIA QUERIES */
+
+@media  screen and (max-width: 320px) {
+
+    .imagen-presentacion img {
+        height: 350px;
+    }
+
+
+    .titulo-principal {
+        
+        font-size: 2.5em;
+    
+        
+    }
+
+    .titulo-secundario {
+    
+        font-size: 2em;
+    }
+
+    .presentacion-proyecto {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .propuestas-item-1 {
+        text-align: center;
+    }
+
+    .propuestas-item-2 {
+        background-color: rgb(255, 0, 79);
+        border: none;
+        color: white;
+        text-align: center;
+
+    }
+
+    .propuestas-item-3 {
+        background-color: var(--principal-color);
+        border: none;
+        color: white;
+        text-align: center;
+    }
+
+    .propuestas-item-4 {
+        text-align: center;
+        background-color: rgb(255, 0, 79);
+    }
+        
+    
+}
+
+
+
+
+
+
+
+
+
+
