@@ -5,7 +5,7 @@
 /* Valiables */
 :root {
     --principal-color: rgb(92, 226, 231);
-    --secondary-color: magenta;
+    --secondary-color: rgb(255, 0, 79);
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Russo One', sans-serif;
 }
@@ -24,7 +24,11 @@
 /*  Global Styles */
 a {
     text-decoration: none;
-    color: inherit;
+    color: black;
+}
+
+a:hover {
+    color: black;
 }
 html {
     font-size: 75%;
@@ -33,6 +37,7 @@ html {
 }
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .container {
@@ -60,6 +65,8 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100%;
 }
+
+
 
 
 /* Header */
@@ -116,6 +123,7 @@ header .navbar-menu {
 .navbar-menu .navbar-item:hover {
     background-color: var(--principal-color);
     
+    
 }
 
 .navbar-menu .navbar-item .sub-menu .sub-menu__item {
@@ -161,12 +169,24 @@ header .navbar-menu {
     font-size: 3em;
     color: black;
     padding: 1%;
-    margin: 3% 0;
+    margin: 5% 0;
     
     background-color: var(--principal-color);
     
 
 
+}
+
+h5 {
+    font-size: xx-large;
+}
+
+.carousel-caption p {
+    font-size: x-large;
+}
+
+.carousel-caption {
+    background-color: rgba(255, 0, 79, 50%);
 }
 
 .presentacion-proyecto p {
@@ -226,7 +246,6 @@ header .navbar-menu {
     margin: 5%;
 
 }
-
 
 /* Main-Nosotros */
 
@@ -292,6 +311,17 @@ header .navbar-menu {
     justify-content: center;
 }
 
+/* Main Contactanos*/
+
+.contactanos {
+    justify-content: center;
+}
+
+section .form {
+
+    margin-right: 10%;
+
+}
 
 
 /* Footer */
