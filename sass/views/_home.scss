@@ -1,0 +1,153 @@
+/* Main-Index */
+
+
+.titulo-principal {
+    font-family: $font-secondary;
+    font-weight: lighter;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    background-color: $secondary-color;
+    margin-top: 1%;
+    
+    
+}
+
+.imagen-presentacion {
+    min-width: 320px;
+}
+
+.titulo-secundario {
+    font-family: $font-primary;
+    font-weight: 400;
+    text-align: center;
+    font-size: 3em;
+    color: black;
+    padding: 1%;
+    margin: 5% 0;
+    background-color: $principal-color;
+    
+
+
+}
+
+h5 {
+    font-size: xx-large;
+}
+
+
+
+.carousel-caption {
+    background-color: rgba(255, 0, 79, 50%);
+    p {
+        font-size: x-large;
+    }
+}
+
+.presentacion-proyecto p {
+    
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 20%;
+    margin: 5%;
+    
+
+    
+}
+
+
+
+// .presentacion-proyecto {
+//     margin-top: 2%;
+//     display: grid;
+//     grid-template-columns: 50% 50%;
+//     grid-template-rows: 50% 50%;
+//     grid-template-areas: 
+    
+//     "propuestas-item-1 propuestas-item-2" 
+//     "propuestas-item-3 propuestas-item-4";
+
+// }
+
+// .propuestas-item-1 { 
+//     grid-area: propuestas-item-1;
+//     background-color: var(--principal-color);
+//     color: whitesmoke;
+// }
+// .propuestas-item-2 { 
+//     grid-area: propuestas-item-2; 
+//     background-color: var(--secondary-color);
+//     color: white;
+// }
+
+// .propuestas-item-3 { 
+//     grid-area: propuestas-item-3;
+//     background-color: var(--secondary-color);
+//     color: white;
+// }
+// .propuestas-item-4 { 
+//     grid-area: propuestas-item-4; 
+//     background-color: var(--principal-color);
+//     color: whitesmoke;
+
+// }
+
+
+.titulo-alternativo {
+    font-family: $font-primary ;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 5%;
+
+}
+
+
+@media screen and (max-width: 320px)  {
+    
+
+    header .logo {
+    margin-left: 25%;
+
+    }
+
+    .navbar-menu .navbar-item .menu-link {
+        font-size: 0.75em;
+        font-weight: 400;
+        padding: 0.5rem;
+    } 
+        
+
+} 
+
+@media screen and (min-width: 320px) and  (max-width: 768px)  {
+
+.titulo-principal {
+    font-size: 2.5em;
+
+    }
+
+    .titulo-secundario {
+    
+        font-size: 1.5em;
+        
+    }
+
+    .d-block {
+        height: 50vh;
+    }
+
+
+    .titulo-alternativo {
+
+        font-size: 1.5em;
+
+    }
+
+    .titulo-alternativo a {
+        font-size: 1em;
+    }
+
+}
+
+

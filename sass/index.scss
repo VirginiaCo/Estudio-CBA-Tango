@@ -1,0 +1,24 @@
+
+/* VARIABLES*/
+
+@import "./misc/variables";
+
+/* GLOBALS */
+
+@import "./misc/normalize";
+@import "./misc/helpers";
+
+/* PARTIALS */
+
+@import "./partials/header";
+@import "./partials/footer";
+
+/* VIEWS */
+
+@import "./views/home";
+@import "./views/nosotros";
+@import "./views/staff";
+@import "./views/clases";
+@import "./views/contactanos";
+
+

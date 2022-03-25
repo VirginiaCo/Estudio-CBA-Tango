@@ -1,0 +1,110 @@
+/* Header */
+
+.header {
+    background-image: url(../assets/image/Imagen-fondo-header-transp-01-01.png);
+    .navbar {
+        min-height: 10vh;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        .logo {
+            flex-basis: 40%;
+            min-width: 200px;
+        }
+        .navbar-menu {
+            flex-basis: 50%;
+            justify-content: space-between;
+            background-color:rgba(199, 192, 194, 0.30);
+
+            .navbar-item {
+                position: relative;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    background-color: $principal-color;
+                    .sub-menu {
+                        display: block;
+                    }
+                }
+
+            }
+
+            .menu-link {
+                font-size: 1.2em;
+                font-weight: 500;
+                padding: 1rem;
+                font-family: $font-primary;
+
+                .sub-menu {
+                    display: none;
+                    position: absolute;
+                &__link {
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        background-color: $principal-color;
+                        color: whitesmoke;
+                        padding: 0.5rem;
+                        display: block;
+
+                    }
+                }
+                &__item {
+                    padding: 1rem;
+                    }
+                }
+
+                }
+            }
+        
+        }
+    
+    }
+
+    @media screen and (min-width: 320px) and  (max-width: 768px)  {
+
+        header .logo {
+        margin-left: 35%;
+        }
+    
+        header .navbar-menu {
+            margin-left: 20%;
+        }
+    
+        .navbar-menu .navbar-item .menu-link {
+            font-size: 1em;
+            font-weight: 500;
+            padding: 0.75rem;
+        }
+    
+    }
+
+
+    @media screen and (min-width: 320px) and  (max-width: 768px)  {
+
+        header .logo {
+        margin-left: 35%;
+        }
+
+        header .navbar-menu {
+            margin-left: 20%;
+        }
+    
+        .navbar-menu .navbar-item .menu-link {
+            font-size: 1em;
+            font-weight: 500;
+            padding: 0.75rem;
+            
+    
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+

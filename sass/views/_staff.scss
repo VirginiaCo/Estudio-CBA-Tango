@@ -1,0 +1,45 @@
+/* Main Staff */
+
+.profe-staff {
+    text-align: center;
+    background-color: $secondary-color;
+    color: white;
+    font-family: $font-primary;
+}
+
+.presentacion-staff {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.img-presentacion-staff img {
+    margin-bottom: 10%;
+}
+
+.img-staff img {
+    padding: 2%;
+}
+
+
+.texto-presentacion-staff {
+    text-align: center;
+    padding: 1% 10% ;
+    margin-bottom: 40%;
+    transition: all 2.5s ease-in;
+    font-size: small;
+    font-family: $font-primary;
+
+
+}
+
+.texto-presentacion-staff:hover {
+    background-color: $principal-color;
+    width: auto;
+    height: 200px;
+    color: white;
+    
+
+
+}
