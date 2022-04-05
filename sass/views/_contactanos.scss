@@ -2,11 +2,19 @@
 /* Main Contactanos*/
 
 .contactanos {
-    justify-content: center;
+    @include flex (row, center, flex-start);
+    .form {
+    
+        margin-right: 10%;
+    
+    }
+    
+    .datos {
+    
+        align-self: flex-start;
+    
+    }
+    
+
 }
 
-section .form {
-
-    margin-right: 10%;
-
-}

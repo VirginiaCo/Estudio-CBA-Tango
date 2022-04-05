@@ -4,7 +4,7 @@
 .titulo-principal {
     font-family: $font-secondary;
     font-weight: lighter;
-    font-size: 4em;
+    font-size: map-get($font-size, xlarge);
     color: white;
     text-align: center;
     background-color: $secondary-color;
@@ -21,7 +21,7 @@
     font-family: $font-primary;
     font-weight: 400;
     text-align: center;
-    font-size: 3em;
+    font-size: map-get($font-size, large);
     color: black;
     padding: 1%;
     margin: 5% 0;
@@ -32,7 +32,7 @@
 }
 
 h5 {
-    font-size: xx-large;
+    font-size: map-get($font-size, large);
 }
 
 
@@ -40,13 +40,13 @@ h5 {
 .carousel-caption {
     background-color: rgba(255, 0, 79, 50%);
     p {
-        font-size: x-large;
+        font-size: map-get($font-size, medium);
     }
 }
 
 .presentacion-proyecto p {
     
-    font-size: 2em;
+    font-size: map-get($font-size, large);
     font-weight: bolder;
     padding: 20%;
     margin: 5%;
@@ -96,58 +96,27 @@ h5 {
 .titulo-alternativo {
     font-family: $font-primary ;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: map-get($font-size , medium );
     text-align: center;
     margin: 5%;
-
-}
-
-
-@media screen and (max-width: 320px)  {
-    
-
-    header .logo {
-    margin-left: 25%;
-
-    }
-
-    .navbar-menu .navbar-item .menu-link {
+    button {
         font-size: 0.75em;
-        font-weight: 400;
-        padding: 0.5rem;
-    } 
+        padding: 1rem;
+        background-color: $principal-color;
+        color: white;
+        border-style: hidden;
+        a {
+            font-size: map-get (font-size , small );
+        }
+
         
-
-} 
-
-@media screen and (min-width: 320px) and  (max-width: 768px)  {
-
-.titulo-principal {
-    font-size: 2.5em;
-
-    }
-
-    .titulo-secundario {
-    
-        font-size: 1.5em;
         
-    }
-
-    .d-block {
-        height: 50vh;
-    }
-
-
-    .titulo-alternativo {
-
-        font-size: 1.5em;
-
-    }
-
-    .titulo-alternativo a {
-        font-size: 1em;
+        
     }
 
 }
+
+
+
 
 

@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudio de Tango y Danzas en Cordoba Capital">
+    <meta name="keywords" content="TANGO, DANZAS, CLASES, ESTUDIO, ACADEMIA, ESCUELA, BAILE">
     <title>Estudio-CBA-Tango</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
     <header class="header"> <!--Menu-->
-        <nav class="navbar flex-row container">
-            <picture class="logo">
+        <nav class="navbar container">
+            <picture class="logo"f>
                 <img src= "../image/logo sin fondo.png" alt="Logo" width="70%">
             </picture>
             
-            <ul class="navbar-menu flex-row">
+            <ul class="navbar-menu">
                 <li class="navbar-item"><a href="../../index.html" class="menu-link">INICIO</a> </li>
                 <li class="navbar-item"><a href="nosotros.html" class="menu-link">NOSOTROS</a>
                     <ul class="sub-menu">
@@ -35,23 +37,35 @@
         <section>
 
             <h2 class="titulo-secundario">Nuestras Clases</h2>
-            <article class="nuestras-clases">
-                <div class="display">
-                    <h3 class="titulo-alternativo">Tango</h3>
-                    <img src="../image/clases-tango.jpg" alt="" width= "350px" height="250px">
+            <article class="container">
+                <div class="row" id="clases">
+                        <div class="col-md-4">                    
+                        <h3 class="titulo-alternativo"></h3>
+                            <img src="../image/TANGO DESDE CERO.jpg">
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="titulo-alternativo"></h3>
+                            <img src="../image/TANGO IMPROVISACION.jpg">
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="titulo-alternativo"></h3>
+                            <img src="../image/TECNICA MUJER.jpg">
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="titulo-alternativo"></h3>
+                            <img src="../image/TEATRO.jpg">
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="titulo-alternativo"></h3>
+                            <img src="../image/FOLKLORE.jpg">
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="titulo-alternativo"></h3>
+                            <img src="../image/YOGA.jpg">
+                        </div>
+
                 </div>
-                <div class="display">
-                    <h3 class="titulo-alternativo">Folclore</h3>
-                    <img src="../image/clases folclore.jpg" alt="" width="350px" height="250px">
-                </div>
-                <div class="display">
-                    <h3 class="titulo-alternativo">Salsa</h3>
-                    <img src="../image/clases salsa.jpg" alt="" width="350px" height="250px">
-                </div>
-                <div class="display">
-                    <h3 class="titulo-alternativo">Stretching</h3>
-                    <img src="../image/clases stretching.jpg" alt="" width="350px" height="250px">
-                </div>
+                
 
             </article>
             
@@ -62,7 +76,63 @@
 
             <h2 class="titulo-secundario">Grilla de Horarios</h2>
 
-        <table border>
+            <article class="grid" id="grilla-horarios">
+                <div class="caja-grilla day">
+                    <p>LUNES</p>
+                </div>
+                <div class="caja-grilla day">
+                    <p>MARTES</p>
+                </div>
+                <div class="caja-grilla day">
+                    <p>MIERCOLES</p>
+                </div>
+                <div class="caja-grilla day">
+                    <p>JUEVES</p>
+                </div>
+                <div class="caja-grilla day">
+                    <p>VIERNES</p>
+                </div>
+                <div class="tango-cero caja-grilla">
+                    <p>18.30 a 20.00 TANGO DE CERO</p>
+                </div>
+                <div class="practica caja-grilla"> 
+                    <p>20.00 a 23.00 PRACTICA DE TANGO</p>
+                </div>
+                <div class="yoga-m caja-grilla">
+                    <P>10.00 a 11.00 YOGA</P>
+                </div>
+                <div class="tecnica-mujer caja-grilla">
+                    <p>17.30 a 19.00 TECNICA DE MUJER</p>
+                </div>
+                <div class="tango-c caja-grilla">
+                    <p>20.00 a 21.30 TANGO CANYENGUE</p>
+                </div>
+                <div class="tango-cero-m caja-grilla">
+                    <p>10.30 a 12.00 TANGO DE CERO</p>
+                </div>
+                <div class="t-impro caja-grilla">
+                    <p>22.00 a 23.30 TANGO IMPROVISACION</p>
+                </div>
+                <div class="yoga-j caja-grilla">
+                    <P>10.00 a 11.00  YOGA</P>
+                </div>
+                <div class="folklore-m caja-grilla">
+                    <P>20.00 a 21.00 FOLKLORE</P>
+                </div>
+                <div class="folklore-j caja-grilla">
+                    <P>20.00 a 21.00 FOLKLORE</P>
+                </div>
+                <div class="teatro caja-grilla">
+                    <p>20.00 a 22.00 TEATRO</p>
+                </div>
+                <div class="talleres caja-grilla">
+                    <p>20.00 a 22.30 TALLERES</p>
+                </div>
+ 
+
+            </article>
+
+        <!-- <table border>
             <thead>
                 <tr>
                     <th>LUNES</th>
@@ -95,7 +165,7 @@
                     <td>19.00 a 20.30 Salsa</td>
                 </tr>
             </tbody>
-        </table>
+        </table> -->
 
         </section>
         
@@ -106,7 +176,7 @@
     
     
     
-    <footer class="flex-row">
+    <footer>
         <p>EstCBATango Todos los derechos reservados &copy; 2022</p>
     </footer>
 

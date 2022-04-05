@@ -21,27 +21,14 @@ a {
 
 html {
   font-size: 75%;
-  font-family: var(--font-primary);
+  font-family: "Montserrat", sans-serif;
   color: black; }
 
 ul {
   list-style-type: none;
   padding-left: 0; }
 
-.container {
-  max-width: 1080px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-
 /* Helpers */
-.flex-row {
-  display: flex; }
-
-.flex-column {
-  display: flex;
-  flex-direction: column; }
-
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -52,68 +39,120 @@ body {
 .header {
   background-image: url(../assets/image/Imagen-fondo-header-transp-01-01.png); }
   .header .navbar {
-    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 5rem;
+    min-height: 10vh;
     padding: 0 2rem; }
     .header .navbar .logo {
-      flex-basis: 40%;
+      flex-basis: 30%;
       min-width: 200px; }
-    .header .navbar .navbar-menu {
-      flex-basis: 50%;
-      justify-content: space-between;
-      background-color: rgba(199, 192, 194, 0.3); }
-      .header .navbar .navbar-menu .navbar-item {
-        position: relative;
-        transition: all .3s ease-in-out; }
-        .header .navbar .navbar-menu .navbar-item:hover {
-          background-color: #5ce2e7; }
-          .header .navbar .navbar-menu .navbar-item:hover .sub-menu {
+    .header .navbar .navbar-item {
+      position: relative;
+      transition: all .3s ease-in-out; }
+      .header .navbar .navbar-item .sub-menu {
+        display: none;
+        position: absolute; }
+        .header .navbar .navbar-item .sub-menu__item {
+          padding: 1rem; }
+        .header .navbar .navbar-item .sub-menu__link {
+          transition: all .3s ease-in-out; }
+          .header .navbar .navbar-item .sub-menu__link:hover {
+            background-color: #ff004f;
+            color: whitesmoke;
+            padding: 0.5rem;
             display: block; }
+      .header .navbar .navbar-item:hover {
+        background-color: #ff004f; }
+      .header .navbar .navbar-item:hover .sub-menu {
+        display: block; }
+    .header .navbar .navbar-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5rem;
+      flex-basis: 50%; }
       .header .navbar .navbar-menu .menu-link {
         font-size: 1.2em;
-        font-weight: 500;
-        padding: 1rem;
-        font-family: "Montserrat", sans-serif; }
-        .header .navbar .navbar-menu .menu-link .sub-menu {
+        font-weight: 600;
+        padding: 1rem; }
+        .header .navbar .navbar-menu .menu-link:hover {
+          color: whitesmoke; }
+
+@media screen and (max-width: 480px) {
+  .header {
+    background-image: url(../assets/image/Imagen-fondo-header-transp-01-01.png); }
+    .header .navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      min-height: 8vh;
+      padding: 0 1rem; }
+      .header .navbar .logo {
+        flex-basis: 30%;
+        min-width: 250px;
+        align-self: center; }
+      .header .navbar .navbar-item {
+        position: relative;
+        transition: all .3s ease-in-out; }
+        .header .navbar .navbar-item .sub-menu {
           display: none;
           position: absolute; }
-          .header .navbar .navbar-menu .menu-link .sub-menu__link {
+          .header .navbar .navbar-item .sub-menu__item {
+            padding: 1rem; }
+          .header .navbar .navbar-item .sub-menu__link {
             transition: all .3s ease-in-out; }
-            .header .navbar .navbar-menu .menu-link .sub-menu__link:hover {
-              background-color: #5ce2e7;
+            .header .navbar .navbar-item .sub-menu__link:hover {
+              background-color: #ff004f;
               color: whitesmoke;
               padding: 0.5rem;
-              display: block; }
-          .header .navbar .navbar-menu .menu-link .sub-menu__item {
-            padding: 1rem; }
+              display: block; } }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  header .logo {
-    margin-left: 35%; }
-  header .navbar-menu {
-    margin-left: 20%; }
-  .navbar-menu .navbar-item .menu-link {
-    font-size: 1em;
-    font-weight: 500;
-    padding: 0.75rem; } }
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  header .logo {
-    margin-left: 35%; }
-  header .navbar-menu {
-    margin-left: 20%; }
-  .navbar-menu .navbar-item .menu-link {
-    font-size: 1em;
-    font-weight: 500;
-    padding: 0.75rem; } }
+@media screen and (max-width: 960px) {
+  .header {
+    background-image: url(../assets/image/Imagen-fondo-header-transp-01-01.png); }
+    .header .navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3.5rem;
+      min-height: 10vh;
+      padding: 0 2rem; }
+      .header .navbar .logo {
+        flex-basis: 40%;
+        min-width: 250px;
+        align-self: center; }
+      .header .navbar .navbar-item {
+        position: relative;
+        transition: all .3s ease-in-out; }
+        .header .navbar .navbar-item .sub-menu {
+          display: none;
+          position: absolute; }
+          .header .navbar .navbar-item .sub-menu__item {
+            padding: 2rem; }
+          .header .navbar .navbar-item .sub-menu__link {
+            transition: all .3s ease-in-out; }
+            .header .navbar .navbar-item .sub-menu__link:hover {
+              background-color: #ff004f;
+              color: whitesmoke;
+              padding: 0.75rem;
+              display: block; } }
 
 /* Footer */
 footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   height: 10vh;
   background-color: whitesmoke;
-  align-items: center;
-  justify-content: center;
   font-size: 1em; }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -138,7 +177,7 @@ footer {
 .imagen-presentacion {
   min-width: 320px; }
 
-.titulo-secundario {
+.titulo-secundario, .clary-jony, #Propuesta .nuestra-propuesta {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-align: center;
@@ -149,95 +188,84 @@ footer {
   background-color: #5ce2e7; }
 
 h5 {
-  font-size: xx-large; }
+  font-size: 3em; }
 
 .carousel-caption {
   background-color: #ff004f; }
   .carousel-caption p {
-    font-size: x-large; }
+    font-size: 2em; }
 
 .presentacion-proyecto p {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bolder;
   padding: 20%;
   margin: 5%; }
 
-.titulo-alternativo {
+.titulo-alternativo, .presentacion-box .presentacion {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
   margin: 5%; }
-
-@media screen and (max-width: 320px) {
-  header .logo {
-    margin-left: 25%; }
-  .navbar-menu .navbar-item .menu-link {
+  .titulo-alternativo button, .presentacion-box .presentacion button {
     font-size: 0.75em;
-    font-weight: 400;
-    padding: 0.5rem; } }
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .titulo-principal {
-    font-size: 2.5em; }
-  .titulo-secundario {
-    font-size: 1.5em; }
-  .d-block {
-    height: 50vh; }
-  .titulo-alternativo {
-    font-size: 1.5em; }
-  .titulo-alternativo a {
-    font-size: 1em; } }
+    padding: 1rem;
+    background-color: #5ce2e7;
+    color: white;
+    border-style: hidden; }
+    .titulo-alternativo button a, .presentacion-box .presentacion button a {
+      font-size: map-get font-size, small; }
 
 /* Main-Nosotros */
 .nosotros {
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; }
 
-.texto-presentacion {
-  padding: 5%;
-  text-align: center;
-  font-size: 1.1em;
-  line-height: 18px; }
+.presentacion-box {
+  width: 400px;
+  height: 400px;
+  text-align: start; }
+  .presentacion-box .presentacion {
+    color: #5ce2e7; }
+  .presentacion-box .texto-presentacion {
+    text-align: center;
+    font-size: 1.5em; }
 
-.texto-presentacion-propuesta {
-  padding: 1% 4%;
-  margin: 2% 0;
+#Propuesta .img-propuesta {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 3rem; }
+  #Propuesta .img-propuesta .img-1 {
+    grid-column: 1/6;
+    grid-row: 1; }
+  #Propuesta .img-propuesta .img-2 {
+    grid-column: 3/4;
+    grid-row: 1;
+    justify-content: center;
+    align-self: center; }
+
+#Propuesta .texto-presentacion-propuesta {
+  font-size: 1.5em;
   text-align: center;
-  font-size: 1.1em;
-  line-height: 18px;
-  font-weight: 500;
-  line-height: 20px; }
+  margin-top: 2%; }
 
 /* Main Staff */
-.profe-staff {
-  text-align: center;
-  background-color: #ff004f;
-  color: white;
-  font-family: "Montserrat", sans-serif; }
-
 .presentacion-staff {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem; }
 
-.img-presentacion-staff img {
-  margin-bottom: 10%; }
-
-.img-staff img {
-  padding: 2%; }
-
-.texto-presentacion-staff {
-  text-align: center;
-  padding: 1% 10%;
-  margin-bottom: 40%;
-  transition: all 2.5s ease-in;
-  font-size: small;
-  font-family: "Montserrat", sans-serif; }
-
-.texto-presentacion-staff:hover {
-  background-color: #5ce2e7;
-  width: auto;
-  height: 200px;
-  color: white; }
+.card-title {
+  font-size: 2em;
+  font-weight: 700;
+  color: #5ce2e7; }
 
 /* Main Nuestras Clases */
 .nuestras-clases {
@@ -246,16 +274,74 @@ h5 {
   margin: 2%;
   justify-content: center; }
 
+.caja-grilla {
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(255, 0, 79, 0.5);
+  padding: 5%; }
+
+#grilla-horarios {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 3rem;
+  justify-content: center;
+  grid-template-rows: auto; }
+
+#clases {
+  margin-left: 5%; }
+
+.day {
+  background-color: #5ce2e7; }
+
+.tango-cero {
+  grid-column: 1/2;
+  grid-row: 2/3; }
+
+.practica {
+  grid-column: 1/2;
+  grid-row: 3/4; }
+
+.tecnica-mujer {
+  grid-column: 2/3;
+  grid-row: 3/4; }
+
+.folklore-m {
+  grid-column: 2/3;
+  grid-row: 4/5; }
+
+.tango-c {
+  grid-column: 2/3;
+  grid-row: 5/6; }
+
+.tango-cero-m {
+  grid-column: 3/4;
+  grid-row: 2/3; }
+
+.t-impro {
+  grid-column: 3/4;
+  grid-row: 3/4; }
+
+.folklore-j {
+  grid-column: 4/5;
+  grid-row: 3/4; }
+
+.teatro {
+  grid-column: 4/5;
+  grid-row: 4/5; }
+
+.talleres {
+  grid-column: 5/6;
+  grid-row: 2/3; }
+
 /* Main Contactanos*/
 .contactanos {
-  justify-content: center; }
-
-section .form {
-  margin-right: 10%; }
-
-/* Main Contactanos*/
-.contactanos {
-  justify-content: center; }
-
-section .form {
-  margin-right: 10%; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem; }
+  .contactanos .form {
+    margin-right: 10%; }
+  .contactanos .datos {
+    align-self: flex-start; }

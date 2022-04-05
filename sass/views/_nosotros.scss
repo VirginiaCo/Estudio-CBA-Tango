@@ -1,28 +1,188 @@
 /* Main-Nosotros */
 
 .nosotros {
-    display: flex;
+    @include flex (row, space-between, center, 2rem)
+}
+    .presentacion-box {
+    width: 400px;
+    height: 400px;
+    text-align: start;
+        .presentacion {
+        @extend .titulo-alternativo;
+        color: $principal-color;
+    }
+        .texto-presentacion {
+            
+            text-align: center;
+            font-size: map-get($font-size, small);
+        }
+        
+    }
+
+
+
+
+.clary-jony {
+    @extend .titulo-secundario;
+}
+
+#Propuesta {
+    .nuestra-propuesta {
+        @extend .titulo-secundario;
+
+}
+
+    .img-propuesta {
+        @include grid (5, 1fr, 1, 1fr);
+        .img-1 {
+            grid-column: 1/6;
+            grid-row: 1;
+
+        }
+        .img-2 {
+            grid-column: 3/4;
+            grid-row: 1;
+            justify-content: center;
+            align-self: center;
+            
+        }
+    }
+    
+
+    .texto-presentacion-propuesta {
+        font-size: map-get($font-size , small );
+        text-align: center;
+        margin-top: 2%;
+    
+    }
+}
+
+@media screen and (max-width:  480px) {
+    .nosotros {
+        @include flex (row, space-between, center, 1rem)
+    }
+        .presentacion-box {
+        width: 200px;
+        height: 200px;
+        text-align: start;
+        order: 3;
+            .presentacion {
+            @extend .titulo-alternativo;
+            color: $principal-color;
+        }
+            .texto-presentacion {
+                
+                text-align: center;
+                font-size: map-get($font-size, xsmall);
+            }
+            
+        }
+    
+    
+    
+    
+    .clary-jony {
+        @extend .titulo-secundario;
+    }
+    
+    #Propuesta {
+        .nuestra-propuesta {
+            @extend .titulo-secundario;
+    
+    }
+    
+        .img-propuesta {
+            @include grid (5, 1fr, 1, 1fr);
+            .img-1 {
+                grid-column: 1/6;
+                grid-row: 1;
+    
+            }
+            .img-2 {
+                grid-column: 3/4;
+                grid-row: 1;
+                justify-content: center;
+                align-self: center;
+                max-width: 50px;
+                
+            }
+        }
+        
+    
+        .texto-presentacion-propuesta {
+            font-size: map-get($font-size , xsmall );
+            text-align: center;
+            margin-top: 2%;
+        
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+
+    .nosotros {
+        @include flex (row, space-between, center, 1.5rem)
+    }
+        .presentacion-box {
+        width: 250px;
+        height: 250px;
+        text-align: start;
+        order: 3;
+            .presentacion {
+            @extend .titulo-alternativo;
+            color: $principal-color;
+        }
+            .texto-presentacion {
+                
+                text-align: center;
+                font-size: map-get($font-size, xsmall);
+            }
+            
+        }
+    
+    
+    
+    
+    .clary-jony {
+        @extend .titulo-secundario;
+    }
+    
+    #Propuesta {
+        .nuestra-propuesta {
+            @extend .titulo-secundario;
+    
+    }
+    
+        .img-propuesta {
+            @include grid (5, 1fr, 1, 1fr);
+            .img-1 {
+                grid-column: 1/6;
+                grid-row: 1;
+    
+            }
+            .img-2 {
+                grid-column: 3/4;
+                grid-row: 1;
+                justify-content: center;
+                align-self: center;
+                max-width: 80px;
+                
+            }
+        }
+        
+    
+        .texto-presentacion-propuesta {
+            font-size: map-get($font-size , xsmall );
+            text-align: center;
+            margin-top: 2%;
+        
+        }
+    }
+}
     
 
     
-}
 
-.texto-presentacion {
-    padding: 5%;
-    text-align: center;
-    font-size: 1.1em;
-    line-height: 18px;
 
-}
-
-.texto-presentacion-propuesta {
-    padding: 1% 4%;
-    margin: 2% 0;
-    text-align: center;
-    font-size: 1.1em;
-    line-height: 18px;
-    font-weight: 500;
-    line-height: 20px;
-    
-
-}

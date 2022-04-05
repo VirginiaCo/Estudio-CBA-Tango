@@ -7,14 +7,67 @@
     justify-content: center;
 }
 
-/* Main Contactanos*/
-
-.contactanos {
-    justify-content: center;
+.caja-grilla {
+    text-align: center;
+    font-weight: bold;
+    background-color: $sy-color-tp;
+    padding: 5%;
 }
 
-section .form {
+#grilla-horarios {
 
-    margin-right: 10%;
+    @include grid;
+    justify-content: center;
+    grid-template-rows: auto;
 
+}
+
+#clases {
+    margin-left: 5%;
+}
+
+.day {
+    background-color: $principal-color;
+}
+
+.tango-cero {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.practica {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.tecnica-mujer {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.folklore-m {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.tango-c {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+.tango-cero-m {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.t-impro {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.folklore-j {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+.teatro {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+.talleres {
+    grid-column: 5/6;
+    grid-row: 2/3;
 }
