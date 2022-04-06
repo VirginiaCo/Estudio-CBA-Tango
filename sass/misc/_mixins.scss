@@ -1,0 +1,25 @@
+/* Helpers */
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100%;
+}
+
+@mixin flex ($direction: row , $justify: center , $align: center, $gap: 2rem) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify ;
+    align-items: $align;
+    gap: $gap;
+}
+
+
+@mixin grid( $columns: 5, $csize: 1fr, $rows: 5, $rsize: 1fr, $gap: 3rem) {
+    display: grid;
+    grid-template-columns: repeat($columns, $csize);
+    grid-template-rows: repeat($rows, $rsize);
+    gap: $gap;
+    
+}
+        
