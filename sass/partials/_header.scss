@@ -3,7 +3,7 @@
 
 
 .header {
-    background-image: url(../assets/image/Imagen-fondo-header-transp-01-01.png);
+    background-image: url(../../assets/image/Imagen-fondo-header-transp-01-01.png);
     
     .navbar {
         @include flex (row, space-between, center, 5rem);
@@ -70,95 +70,3 @@
 
 
 
-@media screen and (max-width: 480px) {
-
-    
-    .header {
-        background-image: url(../assets/image/Imagen-fondo-header-transp-01-01.png);
-        
-        .navbar {
-            @include flex (row, space-between, center, 2rem);
-            min-height: 8vh;
-            padding: 0 1rem;
-            .logo {
-                flex-basis: 30%;
-                min-width: 250px;
-                align-self: center;
-            }
-            .navbar-item {
-                
-                    position: relative;
-                    transition: all .3s ease-in-out;
-                
-                .sub-menu {
-                    display: none;
-                    position: absolute;
-                    &__item {
-                        padding: 1rem;
-                    }
-                    &__link {
-                        transition: all .3s ease-in-out;
-                        &:hover {
-                            background-color: $secondary-color;
-                            color: whitesmoke;
-                            padding: 0.5rem;
-                            display: block;
-                        }
-
-                    }
-                }
-            }
-        }
-
-    }
-
-}
-
-
-@media screen and (max-width: 960px) {
-
-    .header {
-        background-image: url(../assets/image/Imagen-fondo-header-transp-01-01.png);
-        
-        .navbar {
-            @include flex (row, space-between, center, 3.5rem);
-            min-height: 10vh;
-            padding: 0 2rem;
-            .logo {
-                flex-basis: 40%;
-                min-width: 250px;
-                align-self: center;
-            }
-            .navbar-item {
-                
-                    position: relative;
-                    transition: all .3s ease-in-out;
-                
-                .sub-menu {
-                    display: none;
-                    position: absolute;
-                    &__item {
-                        padding: 2rem;
-                    }
-                    &__link {
-                        transition: all .3s ease-in-out;
-                        &:hover {
-                            background-color: $secondary-color;
-                            color: whitesmoke;
-                            padding: 0.75rem;
-                            display: block;
-                        }
-
-                    }
-                }
-            }
-        }
-
-    }
-
-}
-
-
-
-
-    

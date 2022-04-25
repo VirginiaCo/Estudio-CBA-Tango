@@ -37,7 +37,7 @@ body {
 /* PARTIALS */
 /* Header */
 .header {
-  background-image: url(../assets/image/Imagen-fondo-header-transp-01-01.png); }
+  background-image: url(../../assets/image/Imagen-fondo-header-transp-01-01.png); }
   .header .navbar {
     display: flex;
     flex-direction: row;
@@ -82,68 +82,6 @@ body {
         .header .navbar .navbar-menu .menu-link:hover {
           color: whitesmoke; }
 
-@media screen and (max-width: 480px) {
-  .header {
-    background-image: url(../assets/image/Imagen-fondo-header-transp-01-01.png); }
-    .header .navbar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      gap: 2rem;
-      min-height: 8vh;
-      padding: 0 1rem; }
-      .header .navbar .logo {
-        flex-basis: 30%;
-        min-width: 250px;
-        align-self: center; }
-      .header .navbar .navbar-item {
-        position: relative;
-        transition: all .3s ease-in-out; }
-        .header .navbar .navbar-item .sub-menu {
-          display: none;
-          position: absolute; }
-          .header .navbar .navbar-item .sub-menu__item {
-            padding: 1rem; }
-          .header .navbar .navbar-item .sub-menu__link {
-            transition: all .3s ease-in-out; }
-            .header .navbar .navbar-item .sub-menu__link:hover {
-              background-color: #ff004f;
-              color: whitesmoke;
-              padding: 0.5rem;
-              display: block; } }
-
-@media screen and (max-width: 960px) {
-  .header {
-    background-image: url(../assets/image/Imagen-fondo-header-transp-01-01.png); }
-    .header .navbar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      gap: 3.5rem;
-      min-height: 10vh;
-      padding: 0 2rem; }
-      .header .navbar .logo {
-        flex-basis: 40%;
-        min-width: 250px;
-        align-self: center; }
-      .header .navbar .navbar-item {
-        position: relative;
-        transition: all .3s ease-in-out; }
-        .header .navbar .navbar-item .sub-menu {
-          display: none;
-          position: absolute; }
-          .header .navbar .navbar-item .sub-menu__item {
-            padding: 2rem; }
-          .header .navbar .navbar-item .sub-menu__link {
-            transition: all .3s ease-in-out; }
-            .header .navbar .navbar-item .sub-menu__link:hover {
-              background-color: #ff004f;
-              color: whitesmoke;
-              padding: 0.75rem;
-              display: block; } }
-
 /* Footer */
 footer {
   display: flex;
@@ -154,14 +92,6 @@ footer {
   height: 10vh;
   background-color: whitesmoke;
   font-size: 1em; }
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  footer {
-    font-size: 0.75em; } }
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  footer {
-    font-size: 1em; } }
 
 /* VIEWS */
 /* Main-Index */
@@ -190,9 +120,9 @@ footer {
 h5 {
   font-size: 3em; }
 
-.carousel-caption {
-  background-color: #ff004f; }
-  .carousel-caption p {
+.d-md-block {
+  background-color: rgba(255, 0, 79, 0.5); }
+  .d-md-block p {
     font-size: 2em; }
 
 .presentacion-proyecto p {
@@ -266,6 +196,39 @@ h5 {
   font-size: 2em;
   font-weight: 700;
   color: #5ce2e7; }
+
+.card-text {
+  text-align: center; }
+
+.img-presentacion-staff img {
+  margin-bottom: 10%; }
+
+.img-staff img {
+  padding: 2%; }
+
+.texto-presentacion-staff {
+  text-align: center;
+  padding: 1% 10%;
+  margin-bottom: 40%;
+  transition: all 2.5s ease-in;
+  font-size: small;
+  font-family: "Montserrat", sans-serif; }
+
+.texto-presentacion-staff:hover {
+  background-color: #5ce2e7;
+  width: auto;
+  height: 200px;
+  color: white; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #ff004f;
+  border-color: #ff004f; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #5ce2e7;
+  border-color: #5ce2e7; }
 
 /* Main Nuestras Clases */
 .nuestras-clases {
@@ -345,3 +308,158 @@ h5 {
     margin-right: 10%; }
   .contactanos .datos {
     align-self: flex-start; }
+
+/* MEDIAS QUERIES */
+@media screen and (max-width: 480px) {
+  .header {
+    background-image: url(../../assets/image/img-header-minwidth.png); }
+    .header .navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      min-height: 10vh;
+      padding: 0 1.5rem; }
+      .header .navbar .logo {
+        margin-left: 15%;
+        max-height: 100px; }
+        .header .navbar .logo img {
+          max-width: 150px; }
+      .header .navbar .navbar-item {
+        position: relative;
+        transition: all .3s ease-in-out; }
+        .header .navbar .navbar-item .sub-menu {
+          display: none;
+          position: absolute; }
+          .header .navbar .navbar-item .sub-menu__item {
+            padding: 1rem; }
+          .header .navbar .navbar-item .sub-menu__link {
+            transition: all .3s ease-in-out; }
+            .header .navbar .navbar-item .sub-menu__link:hover {
+              background-color: #ff004f;
+              color: whitesmoke;
+              padding: 0.5rem;
+              display: block; }
+        .header .navbar .navbar-item:hover {
+          background-color: #ff004f; }
+        .header .navbar .navbar-item:hover .sub-menu {
+          display: block; }
+      .header .navbar .navbar-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        flex-basis: 10%; }
+        .header .navbar .navbar-menu .menu-link {
+          font-size: 0.75em;
+          font-weight: 500;
+          padding: 0.75rem; }
+          .header .navbar .navbar-menu .menu-link:hover {
+            color: whitesmoke; }
+  /*HOME*/
+  .titulo-principal {
+    font-family: "Russo One", sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    background-color: #ff004f;
+    margin-top: 0.5%; }
+  .titulo-secundario, .clary-jony, #Propuesta .nuestra-propuesta {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    padding: 1%;
+    margin: 3% 0;
+    background-color: #5ce2e7; }
+  h5 {
+    font-size: 1.5em; }
+  .presentacion-proyecto p {
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 5%;
+    margin: 2%; }
+  .titulo-alternativo, .presentacion-box .presentacion {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    margin: 2%; }
+    .titulo-alternativo button, .presentacion-box .presentacion button {
+      padding: 0.5rem;
+      background-color: #5ce2e7;
+      color: white;
+      border-style: hidden; }
+      .titulo-alternativo button a, .presentacion-box .presentacion button a {
+        font-size: 0.75em; }
+  /* NOSOTROS */
+  .nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; }
+    .nosotros .img-about-us__joni {
+      order: 2;
+      width: 200px;
+      height: 200px; }
+    .nosotros .img-about-us__clari {
+      order: 1;
+      width: 200px;
+      height: 200px;
+      margin-left: 2%; }
+    .nosotros .presentacion-box {
+      margin-left: 5%;
+      margin-top: 1%;
+      height: 140px;
+      text-align: start;
+      order: 3; }
+      .nosotros .presentacion-box .presentacion {
+        font-size: 1em; }
+      .nosotros .presentacion-box .texto-presentacion {
+        text-align: center;
+        font-size: 0.75em; }
+  .clary-jony {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    padding: 0.5%;
+    margin: 2% 0;
+    background-color: #5ce2e7; }
+  #Propuesta .nuestra-propuesta {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    padding: 0.5%;
+    margin: 2% 0;
+    background-color: #5ce2e7; }
+  #Propuesta .img-propuesta {
+    max-height: 150px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 3rem; }
+    #Propuesta .img-propuesta .img-1 {
+      grid-column: 1/6;
+      grid-row: 1; }
+    #Propuesta .img-propuesta .img-2 {
+      grid-column: 3/4;
+      grid-row: 1;
+      justify-content: center;
+      align-self: center; }
+      #Propuesta .img-propuesta .img-2 img {
+        max-width: 80px; }
+  #Propuesta .texto-presentacion-propuesta {
+    font-size: 0.75em;
+    text-align: center;
+    max-width: 400px;
+    margin-left: 5%; } }

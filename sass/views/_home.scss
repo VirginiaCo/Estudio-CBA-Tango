@@ -37,8 +37,9 @@ h5 {
 
 
 
-.carousel-caption {
-    background-color: rgba(255, 0, 79, 50%);
+.d-md-block {
+    
+    background-color: rgba(255, 0, 79, 0.5);
     p {
         font-size: map-get($font-size, medium);
     }

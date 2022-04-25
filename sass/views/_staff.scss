@@ -23,37 +23,49 @@
 
 
 }
-// .card-text {
+.card-text {
     
-//     text-align: center;
-// }
+    text-align: center;
+}
 
-// .img-presentacion-staff img {
-//     margin-bottom: 10%;
-// }
+.img-presentacion-staff img {
+    margin-bottom: 10%;
+}
 
-// .img-staff img {
-//     padding: 2%;
-// }
-
-
-// .texto-presentacion-staff {
-//     text-align: center;
-//     padding: 1% 10% ;
-//     margin-bottom: 40%;
-//     transition: all 2.5s ease-in;
-//     font-size: small;
-//     font-family: $font-primary;
+.img-staff img {
+    padding: 2%;
+}
 
 
-// }
+.texto-presentacion-staff {
+    text-align: center;
+    padding: 1% 10% ;
+    margin-bottom: 40%;
+    transition: all 2.5s ease-in;
+    font-size: small;
+    font-family: $font-primary;
 
-// .texto-presentacion-staff:hover {
-//     background-color: $principal-color;
-//     width: auto;
-//     height: 200px;
-//     color: white;
+
+}
+
+.texto-presentacion-staff:hover {
+    background-color: $principal-color;
+    width: auto;
+    height: 200px;
+    color: white;
     
 
 
-// }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: $principal-color;
+    border-color: $principal-color;
+}

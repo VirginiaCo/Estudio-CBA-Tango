@@ -1,0 +1,269 @@
+@media screen and (max-width: 480px) {
+    .header {
+
+        background-image: url(../../assets/image/img-header-minwidth.png);
+        
+        
+        .navbar {
+            @include flex (row, center, center, 1rem);
+            min-height: 10vh;
+            padding: 0 1.5rem;
+
+        
+            .logo {
+
+                margin-left: 15%;
+                max-height: 100px;
+
+                img {
+                    max-width: 150px;
+                }
+
+            
+            
+        }
+            .navbar-item {
+                
+                position: relative;
+                transition: all .3s ease-in-out;
+                
+                .sub-menu {
+                    display: none;
+                    position: absolute;
+                    &__item {
+                        padding: 1rem;
+                    }
+                    &__link {
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            background-color: $secondary-color;
+                            color: whitesmoke;
+                            padding: 0.5rem;
+                            display: block;
+                        }
+                    }
+            
+                }
+            &:hover {
+                background-color: $secondary-color;
+                
+            }
+            &:hover .sub-menu {
+                display: block;
+            }
+    
+            }
+                
+            .navbar-menu {
+                @include flex (row, space-between, center, 0.5rem);
+                flex-basis: 10%;
+            
+                .menu-link{
+                    font-size: 0.75em;
+                    font-weight: 500;
+                    padding: 0.75rem;
+                    &:hover {
+                        color: whitesmoke;
+                    }
+                    
+                    
+                }
+                
+            }
+        }
+        
+    }
+
+    /*HOME*/
+
+
+.titulo-principal {
+    font-family: $font-secondary;
+    font-weight: lighter;
+    font-size: map-get($font-size, medium);
+    color: white;
+    text-align: center;
+    background-color: $secondary-color;
+    margin-top: 0.5%;
+    
+    
+}
+
+
+.titulo-secundario {
+    font-family: $font-primary;
+    font-weight: 400;
+    text-align: center;
+    font-size: map-get($font-size, small);
+    color: black;
+    padding: 1%;
+    margin: 3% 0;
+    background-color: $principal-color;
+    
+
+
+}
+
+h5 {
+    font-size: map-get($font-size, small);
+}
+
+
+
+.presentacion-proyecto p {
+    
+    font-size: map-get($font-size, small);
+    font-weight: bolder;
+    padding: 5%;
+    margin: 2%;
+    
+
+    
+}
+
+
+
+
+
+.titulo-alternativo {
+    font-family: $font-primary ;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    margin: 2%;
+    button {
+        
+        padding: 0.5rem;
+        background-color: $principal-color;
+        color: white;
+        border-style: hidden;
+        a {
+            font-size: 0.75em;
+        }
+
+        
+        
+        
+    }
+
+}
+/* NOSOTROS */
+
+
+.nosotros {
+    @include flex (row, start, center, 2rem);
+    flex-wrap: wrap;
+
+    .img-about-us__joni {
+        // @include flex;
+        order: 2;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .img-about-us__clari {
+        order: 1;
+        width: 200px;
+        height: 200px;
+        margin-left: 2%;
+    
+        
+    }
+
+    .presentacion-box {
+        margin-left: 5%;
+        margin-top: 1%;
+        height: 140px;
+        text-align: start;
+        order: 3;
+        
+            .presentacion {
+            font-size: 1em;
+    
+        }
+            .texto-presentacion {
+                
+                text-align: center;
+                font-size: map-get($font-size, xsmall);
+            }
+            
+        }
+    
+}
+    
+
+
+
+.clary-jony {
+    font-family: $font-primary;
+    font-weight: 400;
+    text-align: center;
+    font-size: map-get($font-size, small);
+    color: black;
+    padding: 0.5%;
+    margin: 2% 0;
+    background-color: $principal-color;
+}
+
+#Propuesta {
+    .nuestra-propuesta {
+        font-family: $font-primary;
+        font-weight: 400;
+        text-align: center;
+        font-size: map-get($font-size, small);
+        color: black;
+        padding: 0.5%;
+        margin: 2% 0;
+        background-color: $principal-color;
+
+
+}
+
+    .img-propuesta {
+        max-height: 150px;
+        @include grid (5, 1fr, 1, 1fr);
+        .img-1 {
+            grid-column: 1/6;
+            grid-row: 1;
+            
+
+        }
+        .img-2 {
+           
+            grid-column: 3/4;
+            grid-row: 1;
+            justify-content: center;
+            align-self: center;
+
+            img {
+                max-width: 80px;
+            }
+            
+            
+        }
+    }
+    
+
+    .texto-presentacion-propuesta {
+        font-size: map-get($font-size , xsmall );
+        text-align: center;
+        max-width: 400px;
+        margin-left: 5%;
+
+    
+    }
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
