@@ -188,7 +188,7 @@ h5 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
   gap: 2rem;
   margin-top: 5rem; }
 
@@ -462,4 +462,29 @@ h5 {
     font-size: 0.75em;
     text-align: center;
     max-width: 400px;
-    margin-left: 5%; } }
+    margin-left: 5%; }
+  /* STAFF */
+  .presentacion-staff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    gap: 2rem;
+    margin-top: 5rem;
+    flex-wrap: wrap; }
+  .card-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #5ce2e7; }
+  .card-text {
+    text-align: center;
+    font-size: 1em; }
+  .img-presentacion-staff img {
+    margin-bottom: 10%; }
+  .img-staff img {
+    padding: 0.5%; }
+  /* CLASES*/
+  .grilla-day {
+    font-size: 0.75em; }
+  .caja-grilla {
+    font-size: 0.5em; } }
